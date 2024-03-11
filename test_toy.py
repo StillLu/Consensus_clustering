@@ -1,12 +1,11 @@
 
 import sys
 #sys.path.append("..")
-
-from consensus_spc import *
-import numpy as np
 import matplotlib.pyplot as plt
-from util import *
 import seaborn as sns
+
+from util import *
+from consensus_spc import *
 
 import numpy as np
 import sklearn.datasets
@@ -74,10 +73,9 @@ if __name__ == "__main__":
     labels = data_sum.target
     x = scale(x, axis=0)
 
-    '''
+
     eig_sv = gen_eigmap(n_components=3)
     x = eig_sv.gen_eig(x)
-    '''
 
     main(x,labels)
 
